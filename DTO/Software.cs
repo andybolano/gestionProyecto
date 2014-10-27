@@ -8,6 +8,6 @@ namespace DTO
 {
     class Software
     {
-
+        private String mensaje;
     }
 }
