@@ -1,0 +1,60 @@
+Aca pongo 2 de las tablas del proyecto, que son las que nos tocó a Wendell y a mi, 
+no está completo sino para ir creando el Script para generar la base de datos y ayudar un poco a Jose
+
+
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+USE [master];
+GO
+
+IF EXISTS (SELECT * FROM sys.databases WHERE name = 'GestionProyecto')
+	DROP DATABASE GestionProyecto;
+GO
+
+-- Crear la BD del proyecto.
+CREATE DATABASE GestionProyecto;
+GO
+
+-- Modelo de recuperación bajo 
+-- Para mantener el crecimiento de accesos al minimo.
+ALTER DATABASE GestionProyecto 
+	SET RECOVERY SIMPLE;
+GO
+BEGIN
+-- Tabla Software
+CREATE TABLE [dbo].[Software](
+	[SoftwareID] [int] NOT NULL,
+        [Nombre] [nvarchar](50) NOT NULL,
+	[FechaCreacion] [datetime] NOT NULL,
+	[RadicadoNum] [int] NOT NULL,
+	[Plataformas] [nvarchar](50) NOT NULL,
+	[RequerimientosTecnicos] [nvarchar](500) NOT NULL,
+-- Poniendo Llave Primaria
+CONSTRAINT [PK_SoftwareID] PRIMARY KEY CLUSTERED 
+(
+	[SoftwareID] ASC
+)WITH (IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+END
+GO
+
+BEGIN
+-- Tabla Modulos
+CREATE TABLE [dbo].[Modulos](
+	[ModuloID] [int] NOT NULL,
+        [Nombre] [nvarchar](50) NOT NULL,
+	[FechaCreacion] [datetime] NOT NULL,
+	[Descripcion] [nvarchar](100) NOT NULL,
+	[Valor] [nvarchar](50) NOT NULL,
+-- Llave primaria
+CONSTRAINT [PK_ModuloID] PRIMARY KEY CLUSTERED 
+(
+	[SoftwareID] ASC
+)WITH (IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+END
+GO
