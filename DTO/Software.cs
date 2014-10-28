@@ -8,6 +8,11 @@ namespace DTO
 {
     class Software
     {
-        private String mensaje;
+        public int codigo;
+        public string nombre;
+        DateTime fechaCreacion;
+        public string numAutor;
+        public string requerimientos;
+        public string plataforma;
     }
 }
