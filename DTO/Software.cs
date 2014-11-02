@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    class Software
+    public class Software
     {
-        public int codigo;
-        public string nombre;
-        DateTime fechaCreacion;
-        public string numAutor;
-        public string requerimientos;
-        public string plataforma;
+        public int codigo {get; set;}
+        public string nombre {get; set;}
+        DateTime fechaCreacion { get; set; }
+        public string numAutor { get; set; }
+        public string requerimientos { get; set; }
+        public string plataforma { get; set; }
     }
 }

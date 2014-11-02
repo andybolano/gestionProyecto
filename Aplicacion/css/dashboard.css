@@ -1,0 +1,215 @@
+﻿/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 61px;
+}
+
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #18bc9c;
+    border-right: 1px solid #eee;
+    font-size:18px;
+  }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+  color:#2c3e50;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.page-header1 {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  border-bottom: 1px solid #eee;
+}
+
+
+hr.star-light, hr.star-primary {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color;
+    border-image: none;
+    border-right: 0 none;
+    border-style: solid none none;
+    border-width: 5px 0 0;
+    margin: 25px auto 30px;
+    max-width: 250px;
+    padding: 0;
+    text-align: center;
+}
+hr.star-light:after, hr.star-primary:after {
+    content: "";
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 2em;
+    padding: 0 0.25em;
+    position: relative;
+    top: -0.8em;
+}
+hr.star-light {
+    border-color: #fff;
+}
+hr.star-light:after {
+    background-color: #18bc9c;
+    color: #fff;
+}
+hr.star-primary {
+    border-color: #2c3e50;
+}
+hr.star-primary:after {
+    background-color: #fff;
+    color: #2c3e50;
+}
+
+/*Label Form Control*/
+.float-label-control { position: relative; margin-bottom: 1.5em; }
+    .float-label-control ::-webkit-input-placeholder { color: transparent; }
+    .float-label-control :-moz-placeholder { color: transparent; }
+    .float-label-control ::-moz-placeholder { color: transparent; }
+    .float-label-control :-ms-input-placeholder { color: transparent; }
+    .float-label-control input:-webkit-autofill, .float-label-control textarea:-webkit-autofill {
+         background-color: transparent !important;
+         -webkit-box-shadow: 0 0 0 1000px white inset !important; 
+         -moz-box-shadow: 0 0 0 1000px white inset !important; 
+         box-shadow: 0 0 0 1000px white inset !important; }
+    .float-label-control input, .float-label-control textarea, .float-label-control label {
+         font-size: 1.3em; box-shadow: none; -webkit-box-shadow: none; }
+    .float-label-control input:focus, .float-label-control textarea:focus { box-shadow: none; -webkit-box-shadow: none; border-bottom-width: 2px; padding-bottom: 0;   }
+    
+    .float-label-control textarea:focus { padding-bottom: 4px; }
+    .float-label-control input, .float-label-control textarea { display: block; width: 100%; padding: 0.1em 0em 1px 0em; border: none; border-radius: 0px; border-bottom: 1px solid #aaa; outline: none; margin: 0px; background: none; }
+    .float-label-control textarea { padding: 0.1em 0em 5px 0em; }
+    .float-label-control label { position: absolute; font-weight: normal; top: -1.0em; left: 0.95em; color: #aaaaaa; z-index: -1; font-size: 0.85em; -moz-animation: float-labels 300ms none ease-out; -webkit-animation: float-labels 300ms none ease-out; -o-animation: float-labels 300ms none ease-out; -ms-animation: float-labels 300ms none ease-out; -khtml-animation: float-labels 300ms none ease-out; animation: float-labels 300ms none ease-out; /* There is a bug sometimes pausing the animation. This avoids that.*/ animation-play-state: running !important; -webkit-animation-play-state: running !important; }
+    .float-label-control input.empty + label,
+    .float-label-control textarea.empty + label { top: 0.1em; font-size:1em; animation: none; -webkit-animation: none; }
+    .float-label-control input:not(.empty) + label,
+    .float-label-control textarea:not(.empty) + label { z-index: 1; }
+    .float-label-control input:not(.empty):focus + label,
+    .float-label-control textarea:not(.empty):focus + label { color: #aaaaaa; }
+    .float-label-control.label-bottom label { -moz-animation: float-labels-bottom 300ms none ease-out; -webkit-animation: float-labels-bottom 300ms none ease-out; -o-animation: float-labels-bottom 300ms none ease-out; -ms-animation: float-labels-bottom 300ms none ease-out; -khtml-animation: float-labels-bottom 300ms none ease-out; animation: float-labels-bottom 300ms none ease-out; }
+    .float-label-control.label-bottom input:not(.empty) + label,
+    .float-label-control.label-bottom textarea:not(.empty) + label { top: 3em; }
+
+
+@keyframes float-labels {
+    0% { opacity: 1; color: #aaa; top: 0.1em; font-size: 1.5em; }
+    20% { font-size: 1.5em; opacity: 0; }
+    30% { top: 0.1em; }
+    50% { opacity: 0; font-size: 0.85em; }
+    100% { top: -1em; opacity: 1; }
+}
+
+@-webkit-keyframes float-labels {
+    0% { opacity: 1; color: #aaa; top: 0.1em; font-size: 1.5em; }
+    20% { font-size: 1.5em; opacity: 0; }
+    30% { top: 0.1em; }
+    50% { opacity: 0; font-size: 0.85em; }
+    100% { top: -1em; opacity: 1; }
+}
+
+@keyframes float-labels-bottom {
+    0% { opacity: 1; color: #aaa; top: 0.1em; font-size: 1.5em; }
+    20% { font-size: 1.5em; opacity: 0; }
+    30% { top: 0.1em; }
+    50% { opacity: 0; font-size: 0.85em; }
+    100% { top: 3em; opacity: 1; }
+}
+
+@-webkit-keyframes float-labels-bottom {
+    0% { opacity: 1; color: #aaa; top: 0.1em; font-size: 1.5em; }
+    20% { font-size: 1.5em; opacity: 0; }
+    30% { top: 0.1em; }
+    50% { opacity: 0; font-size: 0.85em; }
+    100% { top: 3em; opacity: 1; }
+}
