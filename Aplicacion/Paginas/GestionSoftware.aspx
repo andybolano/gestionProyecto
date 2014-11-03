@@ -68,7 +68,7 @@
                     
                 </div>
             </div>
-            <form role="form"  id="frmSoftware" >
+            
             <div class="row control-group">
                 
                     <div class="col-lg-3 form-group float-label-control">
@@ -78,7 +78,8 @@
                     </div>
                     <div class="col-lg-3 col-lg-offset-3 form-group float-label-control">
                         <label for="">Fecha Creación</label>
-                        <input type="text" class="form-control" id="txtFecha" required pattern="(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d" title="Formato dd/mm/yyyy">                      
+                        <input type="date" id="txtFecha" required >
+                       <!-- <input type="text" class="form-control" id="txtFecha" required pattern="(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d" title="Formato dd/mm/yyyy">                      -->
                     </div>                                      
             
             </div>
@@ -129,8 +130,7 @@
                     </div>
                    
                 </div>
-                
-                    </form>
+            
          </div>
       </div>
          

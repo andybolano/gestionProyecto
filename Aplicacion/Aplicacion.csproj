@@ -76,7 +76,7 @@
     <Content Include="img\profile.png" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\default.js" />
-    <Content Include="Servicios\GestionSoftware.js" />
+    <Content Include="js\GestionSoftware.js" />
     <Content Include="js\jquery-1.11.0.js" />
     <Content Include="js\Label.js" />
     <Content Include="Paginas\GestionSoftware.aspx" />

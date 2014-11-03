@@ -13,6 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aplicacion", "Aplicacion\Ap
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6B193F76-BD7B-4F3D-83D3-6B4A1C83F602}"
 	ProjectSection(SolutionItems) = preProject
+		..\..\..\Downloads\gestionproyecto.sql = ..\..\..\Downloads\gestionproyecto.sql
 		Trans-SQL.txt = Trans-SQL.txt
 	EndProjectSection
 EndProject
