@@ -1,15 +1,15 @@
-Aca pongo 2 de las tablas del proyecto, que son las que nos tocó a Wendell y a mi, 
-no está completo sino para ir creando el Script para generar la base de datos y ayudar un poco a Jose
+##Aca pongo 2 de las tablas del proyecto, que son las que nos tocó a Wendell y a mi, 
+##no está completo sino para ir creando el Script para generar la base de datos y ayudar un poco a Jose
 
 
 
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
+#SET ANSI_NULLS ON
+#GO
+#SET QUOTED_IDENTIFIER ON
+#GO
 
-USE [master];
-GO
+#USE [master];
+#GO
 
 IF EXISTS (SELECT * FROM sys.databases WHERE name = 'GestionProyecto')
 	DROP DATABASE GestionProyecto;
