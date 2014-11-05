@@ -28,15 +28,37 @@
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"    data-target="#bs-example-navbar-collapse-1">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Soft ACME</a>
+          <a class="navbar-brand" href="#">SOFT ACME</a>
         </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+       <ul class="nav navbar-nav navbar-right">
+         <li class="dropdown">
+           <a  href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope fa-2x"></i> <span class="badge">2</span> </a>              
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Mensaje # 1</a></li>
+            <li><a href="#">Mensaje # 2 </a></li>
+            
+          </ul>
+        </li>
         
+           
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user fa-2x"></i>   Wendell Arias <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Perfil</a></li>
+            <li><a href="#">Configuraciones</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Salir</a></li>
+          </ul>
+        </li>
+      </ul>
+            </div>
       </div>
     </nav>
 
@@ -121,7 +143,7 @@
           </div>
       </div>
     </div>      
- 
+   </div>
         
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
     <div class="scroll-top page-scroll visible-xs visble-sm">
@@ -130,11 +152,8 @@
         </a>
     </div>
 
-               
-
-    
-
-               
+    <script src="../js/jquery-1.11.0.js"></script>  
+    <script src="../js/bootstrap.min.js"></script>           
 
 </body>
 

@@ -12,18 +12,13 @@
     <meta name="author" content="WDAM">
 
     <title>Soft-ACME</title>
-    
     <link href="../css/bootstrap.min.css" rel="stylesheet">
-    
     <link href="../css/dashboard.css" rel="stylesheet">
-   <link href="../css/default.css" rel="stylesheet">
+    <link href="../css/default.css" rel="stylesheet">
     <!-- Custom Fonts -->
     
-    
     <link href="../css/datepicker.css" rel="stylesheet">
-    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">   
-    
-  
+    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">  
     
 </head>
 
@@ -64,8 +59,7 @@
           <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Gestion de Software</h2>
-                    <hr class="star-primary">
-                    
+                    <hr class="star-primary">                    
                 </div>
             </div>
             <form role="form"  id="frmSoftware" >
@@ -130,7 +124,7 @@
                    
                 </div>
                 
-                    </form>
+            </form>
          </div>
       </div>
          

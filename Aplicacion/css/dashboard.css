@@ -213,3 +213,16 @@ hr.star-primary:after {
     50% { opacity: 0; font-size: 0.85em; }
     100% { top: 3em; opacity: 1; }
 }
+
+.navbar a > .badge {
+    position: absolute;
+    margin: 0 0 0 3px;
+    padding: 2px 5px;
+}
+
+.navbar a{
+    text-transform: none;
+    margin-right:8px;
+}
+
+
